@@ -24,7 +24,7 @@ persistence:
   storageClassName: openebs-hostpath
   accessModes:
     - ReadWriteOnce
-  size: 1Gi
+  size: 0.1Gi
 
 rbac:
   create: true
