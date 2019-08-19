@@ -182,9 +182,9 @@ spec:
             storage: {{ .Values.persistence.size | quote }}
   {{- if .Values.persistence.storageClassName }}
     {{- if (eq "-" .Values.persistence.storageClassName) }}
-        storageClassName: ""
-    {{- else }}
         storageClassName: "{{ .Values.persistence.storageClassName }}"
+    {{- else }}
+        storageClassName: ""
     {{- end }}
   {{- end }}
 {{- else }}
