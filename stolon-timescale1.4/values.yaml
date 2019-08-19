@@ -21,7 +21,7 @@ persistence:
   ##   GKE, AWS & OpenStack)
   ##
   mountPath: /var/lib/postgresql/data
-  storageClassName: openebs-hostpath
+  storageClassName: openebs-device
   accessModes:
     - ReadWriteOnce
   size: 0.1Gi
