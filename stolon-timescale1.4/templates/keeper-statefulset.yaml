@@ -184,7 +184,7 @@ spec:
     {{- if (eq "-" .Values.persistence.storageClassName) }}
         storageClassName: "{{ .Values.persistence.storageClassName }}"
     {{- else }}
-        storageClassName: ""
+        storageClassName: "{{ .Values.persistence.storageClassName }}"
     {{- end }}
   {{- end }}
 {{- else }}
