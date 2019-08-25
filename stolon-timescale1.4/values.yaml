@@ -24,7 +24,7 @@ persistence:
   storageClassName: rook-ceph-block
   accessModes:
     - ReadWriteOnce
-  size: 0.1Gi
+  size: 2Gi
 
 rbac:
   create: true
